@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emily Streske | Cybersecurity & Compliance Professional</title>
+  <title>Emily Streske | COO Cybersecurity & Compliance Portfolio</title>
   <meta
     name="description"
-    content="Professional portfolio website for Emily Streske, focused on cybersecurity, compliance, operations, and technology leadership."
+    content="Professional portfolio for Emily Streske, a cybersecurity and compliance operations leader focused on governance, risk, resilience, and executive execution."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,672 +14,381 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <style>
-    :root {
-      --bg: #f4f7fb;
-      --surface: #ffffff;
-      --surface-alt: #eef3f9;
-      --text: #162033;
-      --muted: #58657a;
-      --primary: #1746a2;
-      --primary-dark: #0f2f6d;
-      --accent: #18a0a8;
-      --border: #d9e2ef;
-      --shadow: 0 18px 40px rgba(17, 31, 61, 0.12);
-      --radius: 20px;
-      --max-width: 1120px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(248, 251, 255, 0.92);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(217, 226, 239, 0.8);
-    }
-
-    .navbar {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 1rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .brand {
-      font-size: 1.05rem;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-      color: var(--primary-dark);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus-visible {
-      color: var(--primary);
-    }
-
-    .menu-toggle {
-      display: none;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 0.55rem 0.8rem;
-      font-size: 1.1rem;
-      cursor: pointer;
-      color: var(--primary-dark);
-    }
-
-    main {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem 4rem;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.3fr 0.9fr;
-      gap: 2rem;
-      align-items: center;
-      padding: 5rem 0 3.5rem;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 1rem;
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(23, 70, 162, 0.08);
-      color: var(--primary);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-
-    .hero h1 {
-      margin: 0 0 1.25rem;
-      font-size: clamp(2.6rem, 5vw, 4.5rem);
-      line-height: 1.08;
-      letter-spacing: -0.03em;
-    }
-
-    .hero-text,
-    .section-intro,
-    .bio-card p,
-    .blog-post p,
-    .contact-card p {
-      color: var(--muted);
-      font-size: 1.04rem;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.95rem 1.35rem;
-      border-radius: 999px;
-      font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-
-    .button:hover,
-    .button:focus-visible {
-      transform: translateY(-2px);
-    }
-
-    .button-primary {
-      background: linear-gradient(135deg, var(--primary), #2a63cf);
-      color: #fff;
-      box-shadow: 0 14px 30px rgba(23, 70, 162, 0.22);
-    }
-
-    .button-secondary {
-      background: var(--surface);
-      color: var(--primary-dark);
-      border: 1px solid var(--border);
-    }
-
-    .hero-card {
-      background: linear-gradient(180deg, #ffffff 0%, #edf4fb 100%);
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-card h2 {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-      font-size: 1.35rem;
-    }
-
-    .hero-highlights {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .highlight {
-      padding: 1rem 1.1rem;
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-    }
-
-    .highlight strong {
-      display: block;
-      margin-bottom: 0.35rem;
-      color: var(--primary-dark);
-    }
-
-    .section {
-      padding: 2rem 0 0;
-    }
-
-    .section-heading {
-      max-width: 720px;
-      margin-bottom: 2rem;
-    }
-
-    .section-heading h2 {
-      margin: 0.25rem 0 0.85rem;
-      font-size: clamp(1.9rem, 3vw, 2.6rem);
-      line-height: 1.15;
-    }
-
-    .bio-grid,
-    .blog-grid,
-    .contact-grid {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    .bio-grid {
-      grid-template-columns: 1.2fr 0.8fr;
-    }
-
-    .bio-card,
-    .info-card,
-    .blog-post,
-    .contact-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: 0 10px 30px rgba(15, 31, 59, 0.05);
-    }
-
-    .bio-card,
-    .info-card,
-    .contact-card {
-      padding: 1.75rem;
-    }
-
-    .info-card h3,
-    .blog-post h3,
-    .contact-card h3 {
-      margin-top: 0;
-      margin-bottom: 1rem;
-      font-size: 1.15rem;
-    }
-
-    .strength-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 0.9rem;
-    }
-
-    .strength-list li {
-      padding: 0.9rem 1rem;
-      background: var(--surface-alt);
-      border-radius: 14px;
-      color: var(--primary-dark);
-      font-weight: 600;
-    }
-
-    .blog-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .blog-post {
-      overflow: hidden;
-    }
-
-    .blog-post img {
-      height: 220px;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .blog-post-content {
-      padding: 1.5rem;
-    }
-
-    .post-tag {
-      display: inline-block;
-      margin-bottom: 0.75rem;
-      color: var(--accent);
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .blog-post h3 {
-      margin-bottom: 0.75rem;
-      font-size: 1.3rem;
-      line-height: 1.25;
-      color: var(--primary-dark);
-    }
-
-    .contact-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .link-list {
-      display: grid;
-      gap: 0.85rem;
-      margin-top: 1.2rem;
-    }
-
-    .contact-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 1.1rem;
-      background: var(--surface-alt);
-      border-radius: 14px;
-      font-weight: 600;
-      color: var(--primary-dark);
-    }
-
-    .contact-link span {
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .footer {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 1.5rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 920px) {
-      .hero,
-      .bio-grid,
-      .contact-grid,
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 3.5rem;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .menu-toggle {
-        display: inline-flex;
-      }
-
-      .nav-links {
-        position: absolute;
-        top: calc(100% + 0.6rem);
-        right: 1.5rem;
-        left: 1.5rem;
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.98);
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        box-shadow: var(--shadow);
-      }
-
-      .nav-links.open {
-        display: flex;
-      }
-
-      .hero h1 {
-        font-size: 2.55rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="#home">Emily Streske</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-        ☰
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="#home">Emily Streske</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#brand">Brand</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#blog">Insights</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Cybersecurity · Compliance · Operations</p>
-        <h1>Building secure, organized, and future-ready technology solutions.</h1>
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">COO Leadership · Cybersecurity · Compliance</p>
+        <h1>Operational leadership for secure, resilient, audit-ready organizations.</h1>
         <p class="hero-text">
-          Emily Streske is a cybersecurity and compliance professional focused on helping
-          organizations improve security readiness, strengthen operational processes, and
-          communicate technical priorities in clear, practical ways.
+          Emily Streske helps executive teams translate cybersecurity, governance, and compliance
+          priorities into steady operating rhythm, measurable accountability, and trust-building
+          business outcomes.
         </p>
 
-        <div class="hero-buttons">
-          <a class="button button-primary" href="#blog">Read Articles</a>
-          <a class="button button-secondary" href="#contact">Connect</a>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Schedule a conversation</a>
+          <a class="btn secondary" href="#blog">Read executive insights</a>
         </div>
+
+        <ul class="hero-points" aria-label="Executive focus areas">
+          <li>Board-ready communication for risk, controls, and operational decisions</li>
+          <li>Cross-functional leadership across security, compliance, and business operations</li>
+          <li>Calm execution for incident response, regulatory readiness, and vendor oversight</li>
+        </ul>
       </div>
 
-      <aside class="hero-card">
-        <p class="eyebrow">Professional Focus</p>
-        <h2>Practical leadership for security-conscious organizations</h2>
-        <p class="hero-text">
-          This portfolio highlights Emily’s interests in cybersecurity awareness, compliance
-          preparation, process improvement, and technology strategy for modern business teams.
-        </p>
+      <aside class="hero-panel" aria-label="Executive profile">
+        <div class="headshot-shell">
+          <img
+            class="headshot-image"
+            src="assets/emily-headshot-placeholder.svg"
+            alt="Placeholder headshot for Emily Streske"
+            width="320"
+            height="320"
+          />
+          <div
+            class="headshot-fallback"
+            role="img"
+            aria-label="Placeholder headshot fallback for Emily Streske"
+            hidden
+          >
+            <span>ES</span>
+          </div>
+          <p class="image-caption">Professional headshot placeholder ready for a final portrait.</p>
+        </div>
 
-        <div class="hero-highlights">
-          <div class="highlight">
-            <strong>Cybersecurity Readiness</strong>
-            Reducing risk through practical controls, awareness, and stronger habits.
-          </div>
-          <div class="highlight">
-            <strong>Compliance Support</strong>
-            Improving documentation, accountability, and operational consistency.
-          </div>
-          <div class="highlight">
-            <strong>Clear Communication</strong>
-            Translating complex technical topics into useful business conversations.
+        <div class="executive-card">
+          <h2>Executive value proposition</h2>
+          <p>
+            Emily brings together operational discipline, cybersecurity fluency, and compliance
+            rigor to help organizations mature without slowing the business.
+          </p>
+          <div class="metric-grid">
+            <div class="metric-card">
+              <strong>Cyber resilience</strong>
+              <span>Controls, readiness, and incident response alignment</span>
+            </div>
+            <div class="metric-card">
+              <strong>Risk governance</strong>
+              <span>Policies, vendor oversight, and leadership reporting</span>
+            </div>
+            <div class="metric-card">
+              <strong>Operational excellence</strong>
+              <span>Cadence, accountability, and sustainable execution</span>
+            </div>
           </div>
         </div>
       </aside>
     </section>
 
-    <section id="about" class="section">
+    <section class="section" id="about">
       <div class="section-heading">
-        <p class="eyebrow">About Emily</p>
-        <h2>Professional bio and career interests</h2>
+        <p class="eyebrow">Professional Bio</p>
+        <h2>A modern operator at the intersection of leadership, security, and compliance.</h2>
         <p class="section-intro">
-          Emily Streske brings together interests in cybersecurity, compliance, business
-          operations, and technology development. Her work is centered on making systems more
-          secure, more organized, and more useful for the people who rely on them every day.
+          Emily Streske is building a professional portfolio centered on COO-level leadership for
+          cybersecurity and compliance-minded organizations. Her focus is creating the structure,
+          clarity, and momentum teams need to operate securely and confidently.
         </p>
       </div>
 
-      <div class="bio-grid">
-        <article class="bio-card">
+      <div class="about-grid">
+        <article class="content-card">
           <p>
-            With experience connected to managed IT services, security-minded operations, and
-            client-facing support, Emily is especially interested in how organizations can
-            build stronger internal processes while adapting to new technology challenges.
+            Emily’s executive perspective combines business operations, cybersecurity awareness,
+            governance, and risk management. She is especially interested in helping leadership
+            teams strengthen operational controls, clarify accountability, and turn compliance
+            requirements into practical routines that support growth.
           </p>
           <p>
-            She values practical problem solving, professional communication, and thoughtful
-            digital strategy. Whether the focus is cybersecurity awareness, policy readiness,
-            or operational improvement, Emily’s approach emphasizes clarity, consistency, and
-            long-term trust.
+            Her approach emphasizes disciplined execution, clear communication, and partnership
+            across functions. From regulatory readiness and vendor risk to incident planning and
+            process improvement, Emily focuses on systems that reduce friction while improving
+            resilience.
           </p>
           <p>
-            This website serves as a college portfolio project that reflects her professional
-            interests and documents her perspective on current technology and compliance topics.
+            This site reflects a professional brand built for organizations that value trust,
+            security, and operational leadership. It is designed to be easy to maintain while
+            presenting an executive-ready narrative for future opportunities.
           </p>
         </article>
 
-        <aside class="info-card">
-          <h3>Core strengths</h3>
-          <ul class="strength-list">
-            <li>Cybersecurity awareness and risk reduction</li>
-            <li>Compliance workflows and documentation</li>
-            <li>Business operations and client communication</li>
-            <li>Technology planning and process improvement</li>
-            <li>Professional writing and digital presence</li>
+        <aside class="content-card emphasis-card">
+          <h3>Leadership priorities</h3>
+          <ul class="check-list">
+            <li>Lead with measurable governance and business alignment</li>
+            <li>Operationalize compliance through repeatable controls</li>
+            <li>Improve resilience before, during, and after incidents</li>
+            <li>Guide vendor and third-party risk with executive visibility</li>
+            <li>Build trust through calm, transparent stakeholder communication</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section id="brand" class="section">
+    <section class="section section-accent" id="skills">
       <div class="section-heading">
-        <p class="eyebrow">Personal Brand</p>
-        <h2>A professional online presence built around trust, clarity, and growth</h2>
+        <p class="eyebrow">Core Skills</p>
+        <h2>Capabilities designed for cybersecurity, governance, and operational leadership.</h2>
         <p class="section-intro">
-          Emily’s online portfolio is designed to communicate a modern professional identity:
-          someone who is security-minded, detail-oriented, and committed to using technology
-          responsibly in business environments.
+          Emily’s strengths are organized around the areas executive teams rely on most when
+          balancing risk, regulation, and growth.
         </p>
       </div>
 
-      <div class="bio-grid">
-        <article class="bio-card">
-          <h3>What this portfolio communicates</h3>
-          <p>
-            The goal of this site is to present Emily as a future-focused professional who can
-            connect technical awareness with business needs. Her personal brand centers on being
-            approachable, organized, and prepared to contribute to environments where security
-            and accountability matter.
-          </p>
-          <p>
-            Through clean design, thoughtful writing, and relevant content, this portfolio also
-            demonstrates the importance of professional presentation in today’s digital world.
-          </p>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Cybersecurity Leadership</h3>
+          <ul class="skill-list">
+            <li>Security program coordination</li>
+            <li>Incident response planning</li>
+            <li>Security awareness enablement</li>
+            <li>Cross-functional remediation tracking</li>
+          </ul>
         </article>
 
-        <aside class="info-card">
-          <h3>Brand qualities</h3>
-          <ul class="strength-list">
-            <li>Security-minded and ethically responsible</li>
-            <li>Clear communicator for technical topics</li>
-            <li>Professional, organized, and dependable</li>
-            <li>Curious about emerging technology trends</li>
-            <li>Focused on practical business value</li>
+        <article class="skill-card">
+          <h3>Governance & Risk</h3>
+          <ul class="skill-list">
+            <li>Governance frameworks and policy alignment</li>
+            <li>Enterprise and vendor risk management</li>
+            <li>Control documentation and ownership</li>
+            <li>Executive reporting and prioritization</li>
           </ul>
-        </aside>
+        </article>
+
+        <article class="skill-card">
+          <h3>Compliance Operations</h3>
+          <ul class="skill-list">
+            <li>Regulatory readiness and evidence collection</li>
+            <li>Audit preparation and control mapping</li>
+            <li>Issue management and corrective action follow-through</li>
+            <li>Process standardization for repeatability</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Operational Execution</h3>
+          <ul class="skill-list">
+            <li>Business operations leadership</li>
+            <li>Stakeholder communication</li>
+            <li>Program cadence and accountability</li>
+            <li>Team alignment through clear workflows</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="blog" class="section">
+    <section class="section" id="blog">
       <div class="section-heading">
-        <p class="eyebrow">Blog</p>
-        <h2>Three articles on cybersecurity, compliance, and technology</h2>
+        <p class="eyebrow">Executive Insights</p>
+        <h2>Three perspectives on cybersecurity, compliance, and resilient operations.</h2>
         <p class="section-intro">
-          These short articles reflect Emily’s interest in how secure systems, thoughtful
-          compliance practices, and user-focused technology shape modern organizations.
+          Each article is written for leaders who need security and compliance guidance framed in
+          business terms.
         </p>
       </div>
 
       <div class="blog-grid">
-        <article class="blog-post">
-          <img
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
-            alt="Blue cybersecurity dashboard on a screen"
-          />
-          <div class="blog-post-content">
-            <span class="post-tag">Cybersecurity</span>
-            <h3>Why small businesses cannot afford to ignore cybersecurity</h3>
-            <p>
-              Cybersecurity is often discussed as a problem for large enterprises, but small
-              businesses face serious risks as well. A single phishing attack, weak password,
-              or outdated device can interrupt operations and damage trust.
-            </p>
-            <p>
-              Strong security habits like multi-factor authentication, software updates, backup
-              planning, and employee awareness training remain some of the most practical ways
-              to reduce risk without overwhelming smaller teams.
-            </p>
-          </div>
+        <article class="blog-card">
+          <p class="post-meta">July 16, 2026 · Cyber Resilience</p>
+          <h3>Resilience is an operating model, not a recovery plan</h3>
+          <p class="post-summary">
+            Executive teams build stronger resilience when cybersecurity, communications, and
+            operating decisions are rehearsed together before an incident occurs.
+          </p>
+          <details class="post-details">
+            <summary>Read the full article</summary>
+            <div class="post-body">
+              <p>
+                Many organizations still define resilience only by what happens after an event.
+                In practice, resilience starts much earlier. It shows up in how teams escalate
+                risk, document responsibilities, and decide which services matter most when time
+                and attention are limited.
+              </p>
+              <p>
+                A COO perspective is valuable because recovery is rarely just a technology issue.
+                It touches customer commitments, leadership messaging, legal review, vendor
+                dependencies, and the pace at which teams can make confident decisions. When those
+                muscles are exercised in advance, organizations recover with less confusion.
+              </p>
+              <p>
+                Mature resilience programs connect incident response planning with business
+                continuity, tabletop exercises, and executive reporting. The result is a more
+                stable organization that can protect trust even when circumstances change quickly.
+              </p>
+            </div>
+          </details>
         </article>
 
-        <article class="blog-post">
-          <img
-            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
-            alt="Workspace with laptop and notebook for planning compliance work"
-          />
-          <div class="blog-post-content">
-            <span class="post-tag">Compliance</span>
-            <h3>Why preparation still matters in a changing compliance landscape</h3>
-            <p>
-              Compliance requirements may change over time, but readiness still creates value.
-              Organizations that document processes, track responsibilities, and build repeatable
-              controls are better positioned when expectations shift.
-            </p>
-            <p>
-              Preparation is not just about passing assessments. It is about strengthening
-              accountability, reducing confusion, and showing that security practices are part
-              of everyday operations instead of a last-minute effort.
-            </p>
-          </div>
+        <article class="blog-card">
+          <p class="post-meta">July 16, 2026 · Controls & Compliance</p>
+          <h3>Strong controls reduce friction when regulatory pressure rises</h3>
+          <p class="post-summary">
+            Organizations that operationalize their controls early are better prepared for audits,
+            customer questions, and evolving compliance expectations.
+          </p>
+          <details class="post-details">
+            <summary>Read the full article</summary>
+            <div class="post-body">
+              <p>
+                Compliance programs become expensive when they depend on last-minute evidence
+                requests and manual follow-up. By contrast, well-run organizations define control
+                owners, collection routines, and review cadence long before external scrutiny
+                arrives.
+              </p>
+              <p>
+                This matters because regulatory readiness is not just about passing an assessment.
+                It is about showing that secure behavior is embedded in daily operations. When
+                leaders can quickly explain how policies connect to real workflows, confidence goes
+                up across customers, auditors, and internal teams.
+              </p>
+              <p>
+                Effective control environments also create operational leverage. Teams spend less
+                time chasing artifacts and more time improving the program, closing gaps, and
+                aligning security work with business priorities.
+              </p>
+            </div>
+          </details>
         </article>
 
-        <article class="blog-post">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
-            alt="Person using a laptop to work with digital tools"
-          />
-          <div class="blog-post-content">
-            <span class="post-tag">Technology</span>
-            <h3>User-friendly technology builds confidence and trust</h3>
-            <p>
-              Secure systems are most effective when people can understand and use them. If a
-              platform is confusing or overly technical, users may avoid it, make mistakes, or
-              lose confidence in the process.
-            </p>
-            <p>
-              Good technology design supports both security and usability. Clear communication,
-              thoughtful workflows, and organized interfaces help users make better decisions and
-              encourage stronger long-term adoption.
-            </p>
-          </div>
+        <article class="blog-card">
+          <p class="post-meta">July 16, 2026 · Governance & Vendor Risk</p>
+          <h3>Vendor risk deserves executive attention before contracts are signed</h3>
+          <p class="post-summary">
+            Third-party risk becomes easier to manage when procurement, security, and operations
+            share expectations from the start instead of escalating surprises later.
+          </p>
+          <details class="post-details">
+            <summary>Read the full article</summary>
+            <div class="post-body">
+              <p>
+                Third-party relationships can accelerate growth, but they also extend an
+                organization’s risk surface. Data handling, service resilience, privileged access,
+                and compliance obligations all travel through vendor decisions that may seem purely
+                commercial at first.
+              </p>
+              <p>
+                Executive leaders can improve outcomes by building a lightweight but consistent
+                intake process. Security review, contract expectations, and contingency planning
+                should happen early enough to influence decisions rather than delay launches after
+                the fact.
+              </p>
+              <p>
+                When vendor governance is framed as business enablement, not bureaucracy, teams are
+                more likely to adopt it. That creates fewer downstream surprises and stronger trust
+                in the organization’s operating discipline.
+              </p>
+            </div>
+          </details>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section class="section" id="contact">
       <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Professional connections and next steps</h2>
+        <p class="eyebrow">Professional Contact</p>
+        <h2>Open to conversations about leadership, resilience, and compliance operations.</h2>
         <p class="section-intro">
-          Emily is continuing to build a professional presence focused on cybersecurity,
-          compliance, operations, and technology leadership.
+          Use the professional contact options below or send a note through the frontend contact
+          form.
         </p>
       </div>
 
       <div class="contact-grid">
-        <article class="contact-card">
-          <h3>Connect professionally</h3>
-          <p>
-            This section can be updated with active professional links for networking,
-            applications, and portfolio review.
-          </p>
-          <div class="link-list">
-            <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-              LinkedIn Profile <span>Update with custom profile URL</span>
+        <article class="content-card contact-card">
+          <h3>Professional channels</h3>
+          <div class="contact-links">
+            <a href="mailto:emily@example.com">
+              <span>Email</span>
+              <strong>emily@example.com</strong>
             </a>
-            <a class="contact-link" href="#">
-              Resume Download <span>Attach PDF when ready</span>
-            </a>
-            <a class="contact-link" href="mailto:your-email@example.com">
-              Email Contact <span>your-email@example.com</span>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <span>LinkedIn placeholder</span>
+              <strong>linkedin.com/in/your-linkedin-handle</strong>
             </a>
           </div>
+          <p class="contact-note">
+            Replace placeholder contact details with Emily’s preferred professional channels when
+            they are ready for publication.
+          </p>
         </article>
 
-        <article class="contact-card">
-          <h3>Portfolio purpose</h3>
-          <p>
-            This website was designed as a clean, college-appropriate portfolio assignment that
-            presents Emily’s professional background, personal brand, and written perspectives
-            in a polished and modern format.
-          </p>
-          <p>
-            It can easily be expanded with a resume page, project examples, certifications, or
-            updated contact details as her professional profile grows.
-          </p>
+        <article class="content-card contact-card">
+          <h3>Contact form</h3>
+          <form class="contact-form" id="contactForm" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="name@company.com"
+            />
+
+            <label for="organization">Organization</label>
+            <input
+              id="organization"
+              name="organization"
+              type="text"
+              autocomplete="organization"
+              placeholder="Company or team"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="How can Emily support your security, risk, or compliance goals?"
+            ></textarea>
+
+            <button class="btn primary" type="submit">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Emily Streske. Professional portfolio website.</p>
+    <p>© 2026 Emily Streske. Cybersecurity, compliance, and executive operations portfolio.</p>
   </footer>
 
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    navLinks.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
