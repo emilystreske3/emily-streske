@@ -24,7 +24,9 @@ if (contactForm && formStatus) {
     event.preventDefault();
     formStatus.textContent =
       "Thank you for reaching out. This demo form is ready for backend integration.";
+    formStatus.tabIndex = -1;
     contactForm.reset();
+    formStatus.focus();
   });
 }
 
