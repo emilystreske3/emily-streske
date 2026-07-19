@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Secure Release Cadence Looks Like in Practice | Emily Streske</title>
+  <meta
+    name="description"
+    content="A practical DevOps leadership perspective on release cadence, security guardrails, and cross-functional accountability."
+  />
+  <meta name="author" content="Emily Streske" />
+  <meta name="keywords" content="Emily Streske, cybersecurity, software engineering, DevOps, business operations, Shield Technologies, MSSP, compliance readiness, risk management, secure software delivery" />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+  <meta property="og:title" content="What Secure Release Cadence Looks Like in Practice" />
+  <meta property="og:description" content="A practical DevOps leadership perspective on release cadence, security guardrails, and cross-functional accountability." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://emilystreske3.github.io/emily-streske/blog/secure-release-cadence-devops.html" />
+  <meta property="og:image" content="https://emilystreske3.github.io/emily-streske/assets/images/STRESKE-56.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="post-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="../index.html">Emily Streske</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html#shield-technologies">Shield Technologies</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li><a href="../resume.html">Download Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="post-hero img-devops" aria-label="Article header">
+      <div class="post-hero-inner">
+        <div class="post-hero-meta">
+          <span class="post-category cat-devops">DevOps</span>
+          <span class="post-meta-text"><time datetime="2026-07-18">July 18, 2026 &middot; 3 min read</time></span>
+          <span class="post-author">By Emily Streske</span>
+        </div>
+        <h1>What Secure Release Cadence Looks Like in Practice</h1>
+        <p class="post-hero-lead">
+          Fast teams are not reckless teams. In my experience, secure delivery gets faster when the
+          release process is structured enough to reduce decision friction.
+        </p>
+      </div>
+    </section>
+
+    <article class="post-article">
+      <div class="post-article-inner">
+        <div class="post-body-content">
+          <figure class="post-image-placeholder">
+            <img
+              src="../assets/images/blog/devops.svg"
+              alt="Software delivery team reviewing deployment workflow on large screen"
+              loading="lazy"
+            />
+            <figcaption>
+              DevOps delivery graphic. Source: Emily Streske.
+            </figcaption>
+          </figure>
+
+          <h2>Define Guardrails Before the Sprint Starts</h2>
+          <p>
+            Teams lose time when release criteria are negotiated at the end of a sprint. I prefer
+            setting non-negotiables at planning: code review requirements, automated test thresholds,
+            dependency scanning, and rollback expectations. These guardrails reduce rework because
+            engineers know the quality bar before they build.
+          </p>
+          <p>
+            The U.S. Cybersecurity and Infrastructure Security Agency calls out secure-by-design
+            engineering as a core practice for modern software producers in its
+            <a href="https://www.cisa.gov/securebydesign" target="_blank" rel="noopener noreferrer">Secure by Design</a>
+            guidance. Operationally, that means security checks should be default workflow, not a
+            separate approval lane.
+          </p>
+
+          <h2>Measure Flow and Risk Together</h2>
+          <p>
+            I track two categories in the same review: delivery flow (lead time, release frequency)
+            and risk health (critical findings, unresolved exceptions). Looking at only speed can
+            hide growing exposure; looking only at findings can hide process drag. Together, they
+            tell the truth about how the system is operating.
+          </p>
+          <p>
+            In Titan delivery work, this combined view helped us keep release rhythm steady while
+            reducing late-stage defects. The practical lesson is simple: secure cadence is not about
+            slowing down, it is about making quality and risk visible early enough to act.
+          </p>
+        </div>
+
+        <div class="post-nav-row">
+          <a class="btn secondary" href="index.html">← Back to Insights</a>
+          <a class="btn primary" href="compliance-evidence-risk-decisions.html">Next Featured Post →</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Emily Streske. Executive technology leader in cybersecurity, engineering, and business operations.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:professional-email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/emily-streske-110392222" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="../assets/resume/Emily_Streske_Executive_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embedding Security Into the CI/CD Pipeline | Emily Streske</title>
+  <meta
+    name="description"
+    content="Security integrated at every stage of the development lifecycle is faster, cheaper, and more effective than security bolted on after deployment."
+  />
+  <meta name="author" content="Emily Streske" />
+  <meta name="keywords" content="Emily Streske, cybersecurity, software engineering, DevOps, business operations, Shield Technologies, MSSP, compliance readiness, risk management, secure software delivery" />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+  <meta property="og:title" content="Embedding Security Into the CI/CD Pipeline" />
+  <meta property="og:description" content="How DevSecOps practices make software delivery faster and more secure by integrating security throughout the development pipeline." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://emilystreske3.github.io/emily-streske/blog/devops-security-in-pipeline.html" />
+  <meta property="og:image" content="https://emilystreske3.github.io/emily-streske/assets/images/STRESKE-56.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="post-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="../index.html">Emily Streske</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html#shield-technologies">Shield Technologies</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li><a href="../resume.html">Download Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Post hero -->
+    <section class="post-hero img-devops" aria-label="Article header">
+      <div class="post-hero-inner">
+        <div class="post-hero-meta">
+          <span class="post-category cat-devops">DevOps</span>
+          <span class="post-meta-text"><time datetime="2026-07-17">July 17, 2026 &middot; 7 min read</time></span>
+          <span class="post-author">By Emily Streske</span>
+        </div>
+        <h1>Embedding Security Into the CI/CD Pipeline</h1>
+        <p class="post-hero-lead">
+          Security integrated at every stage of the development lifecycle is faster, cheaper, and
+          more effective than security bolted on after deployment. The DevSecOps model shifts
+          security left — closer to the code — so that vulnerabilities are caught before they
+          become production incidents.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured image banner -->
+    <div class="post-featured-banner" aria-hidden="true">
+      <div class="post-featured-banner-inner img-devops">
+        <span class="post-banner-label">DevSecOps</span>
+      </div>
+    </div>
+
+    <!-- Article body -->
+    <article class="post-article">
+      <div class="post-article-inner">
+        <div class="post-body-content">
+          <figure class="post-image-placeholder">
+            <img src="../assets/images/blog/devops.svg" alt="DevSecOps pipeline visual" loading="lazy" />
+            <figcaption>Illustrative graphic created for this article. Source: Emily Streske.</figcaption>
+          </figure>
+
+          <h2>Security Works Best When It Is Built Into Flow</h2>
+          <p>
+            Security reviews at the end of a release cycle create bottlenecks and expensive rework.
+            Teams move faster when scanning, dependency checks, and policy validation happen during
+            development and CI, not after code is ready for production.
+          </p>
+          <p>
+            This shift also improves developer confidence because expectations are visible earlier.
+            Engineers can fix issues when context is fresh instead of revisiting completed work.
+          </p>
+
+          <h2>Start with High-Signal Controls and Iterate</h2>
+          <p>
+            CISA secure-by-design guidance highlights reducing exploitable defaults and making secure
+            outcomes easier than insecure ones.
+            <a href="https://www.cisa.gov/securebydesign" target="_blank" rel="noopener noreferrer">Secure by Design</a>
+            aligns well with phased DevSecOps adoption.
+          </p>
+          <p>
+            I recommend beginning with secret scanning, dependency analysis, and pull-request policy
+            checks, then expanding to container and infrastructure controls. This sequence delivers
+            fast risk reduction while preserving release cadence and team adoption.
+          </p>
+          <p>
+            For executive leaders, the practical next step is to translate these ideas into a
+            standing monthly operating review: one section for risk movement, one for remediation
+            ownership, and one for measurable outcomes. This keeps technical work tied to
+            business decisions and helps teams improve consistently rather than react episodically.
+            Programs that use this rhythm usually see faster escalation, clearer accountability,
+            and stronger trust across engineering, operations, and compliance stakeholders.
+          </p>
+        </div>
+
+        <!-- Key takeaways box -->
+        <div class="post-takeaways">
+          <h3>Key Takeaways</h3>
+          <ul>
+            <li>Vulnerabilities found during development cost a fraction of what they cost to fix in production</li>
+            <li>Shift-left security integrates scanning, policy, and training at the code, build, and deploy stages</li>
+            <li>Culture change is harder than tooling — frame security as a quality dimension of engineering</li>
+            <li>Reward early identification of security issues to encourage open communication</li>
+            <li>Start with secret scanning and dependency analysis, then expand to SAST, IaC, and runtime protection</li>
+          </ul>
+        </div>
+
+        <!-- Post navigation -->
+        <div class="post-nav-row">
+          <a class="btn secondary" href="index.html">← Back to Insights</a>
+          <a class="btn primary" href="cloud-computing-migration-strategy.html">Next: Cloud →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related posts -->
+    <section class="related-posts" aria-label="Related articles">
+      <div class="related-posts-inner">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+          <a class="post-card" href="cybersecurity-zero-trust-architecture.html">
+            <div class="post-card-image img-cybersecurity"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-cybersecurity">Cybersecurity</span>
+              <h3>Zero Trust Architecture: A Practical Implementation Guide</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 19, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+          <a class="post-card" href="cloud-computing-migration-strategy.html">
+            <div class="post-card-image img-cloud"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-cloud">Cloud Computing</span>
+              <h3>Cloud Migration Strategy: Balancing Speed and Security Risk</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 16, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+          <a class="post-card" href="technology-trends-ai-cybersecurity.html">
+            <div class="post-card-image img-trends"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-trends">Technology Trends</span>
+              <h3>AI in Cybersecurity: Opportunities, Risks, and Executive Readiness</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 14, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Emily Streske. Executive technology leader in cybersecurity, engineering, and business operations.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:professional-email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/emily-streske-110392222" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="../assets/resume/Emily_Streske_Executive_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">MSSP Operations Placeholder</title>
+  <desc id="desc">Gradient placeholder image for MSSP-focused article visuals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#133d86" />
+      <stop offset="100%" stop-color="#4c86e3" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <circle cx="220" cy="170" r="120" fill="rgba(255,255,255,0.08)" />
+  <circle cx="980" cy="540" r="170" fill="rgba(255,255,255,0.06)" />
+  <g fill="none" stroke="rgba(255,255,255,0.24)" stroke-width="2">
+    <path d="M130 420h940" />
+    <path d="M130 470h940" />
+    <path d="M130 520h940" />
+  </g>
+  <text x="130" y="300" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700">
+    MSSP Operations
+  </text>
+  <text x="130" y="356" fill="rgba(255,255,255,0.9)" font-family="Inter, Arial, sans-serif" font-size="30">
+    Image placeholder for threat monitoring and response workflows
+  </text>
+</svg>
