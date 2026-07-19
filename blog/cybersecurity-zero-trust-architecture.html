@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Trust Architecture: A Practical Implementation Guide | Emily Streske</title>
+  <meta
+    name="description"
+    content="Zero Trust is more than a technical framework — it is an operating philosophy that demands every access decision be verified, every session be limited, and every assumption of implicit trust be replaced with explicit authorization."
+  />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <meta property="og:title" content="Zero Trust Architecture: A Practical Implementation Guide" />
+  <meta property="og:description" content="A practical guide to implementing Zero Trust Architecture for executive technology leaders." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://emilystreske3.github.io/emily-streske/blog/cybersecurity-zero-trust-architecture.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="post-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="../index.html">Emily Streske</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="index.html">Insights</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Post hero -->
+    <section class="post-hero img-cybersecurity" aria-label="Article header">
+      <div class="post-hero-inner">
+        <div class="post-hero-meta">
+          <span class="post-category cat-cybersecurity">Cybersecurity</span>
+          <span class="post-meta-text">July 19, 2026 &middot; 8 min read</span>
+        </div>
+        <h1>Zero Trust Architecture: A Practical Implementation Guide</h1>
+        <p class="post-hero-lead">
+          Zero Trust is more than a technical framework — it is an operating philosophy that demands
+          every access decision be verified, every session be limited, and every assumption of
+          implicit trust be replaced with explicit authorization.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured image banner -->
+    <div class="post-featured-banner" aria-hidden="true">
+      <div class="post-featured-banner-inner img-cybersecurity">
+        <span class="post-banner-label">Zero Trust</span>
+      </div>
+    </div>
+
+    <!-- Article body -->
+    <article class="post-article">
+      <div class="post-article-inner">
+        <div class="post-body-content">
+
+          <h2>What Zero Trust Actually Means</h2>
+          <p>
+            The phrase "never trust, always verify" has become familiar in security circles, but
+            translating it into operational reality requires more than deploying a new tool or
+            updating a policy document. Zero Trust Architecture (ZTA) is a security model that
+            eliminates implicit trust based on network location or user identity alone. Every
+            request — whether it originates inside the perimeter or outside — is treated as
+            potentially hostile until verified.
+          </p>
+          <p>
+            This matters because the traditional perimeter security model assumed that threats
+            came from outside the network and that internal users and systems could be trusted
+            by default. Modern attack patterns have proven that assumption false. Insider threats,
+            compromised credentials, and lateral movement after initial breach are now standard
+            in advanced persistent threat campaigns. Zero Trust addresses this by enforcing
+            least-privilege access, continuous verification, and micro-segmentation at every layer.
+          </p>
+
+          <h2>The Five Core Principles</h2>
+          <p>
+            Effective Zero Trust implementation rests on five principles that must work together
+            as a system rather than in isolation:
+          </p>
+          <ul>
+            <li><strong>Verify explicitly:</strong> Authenticate and authorize based on all available data points — identity, device health, location, service, and workload.</li>
+            <li><strong>Use least-privilege access:</strong> Limit user access with just-in-time and just-enough-access policies, risk-based adaptive controls, and data protection.</li>
+            <li><strong>Assume breach:</strong> Minimize blast radius, segment access, verify end-to-end encryption, and use analytics to get visibility, drive threat detection, and improve defenses.</li>
+            <li><strong>Protect all resources:</strong> Apply consistent policy to users, devices, applications, and data regardless of where they reside.</li>
+            <li><strong>Inspect and log all traffic:</strong> Use telemetry to validate security posture in real time rather than relying on periodic reviews.</li>
+          </ul>
+
+          <h2>Starting Points for Executive Leaders</h2>
+          <p>
+            Zero Trust implementations often stall when they are framed purely as technology
+            projects. The most successful programs start with a business-driven inventory of
+            what needs to be protected, who needs access, and what the acceptable risk thresholds
+            are. That foundation allows the technical architecture to serve real operational
+            requirements.
+          </p>
+          <p>
+            Practical starting points include identity and access management maturity assessments,
+            multi-factor authentication enforcement across all privileged accounts, and device
+            health attestation before network access is granted. These measures can be implemented
+            incrementally, reducing disruption while building momentum toward a comprehensive
+            Zero Trust posture.
+          </p>
+
+          <h2>Common Implementation Challenges</h2>
+          <p>
+            Organizations frequently encounter three challenges during Zero Trust rollouts. First,
+            legacy systems that do not support modern authentication protocols require compensating
+            controls or phased retirement planning. Second, change management is consistently
+            underestimated — users and teams accustomed to implicit trust find new verification
+            requirements disruptive unless onboarding and communication are carefully managed.
+            Third, visibility gaps in shadow IT, unmanaged devices, and third-party integrations
+            can leave significant exposure even as formal systems are hardened.
+          </p>
+          <p>
+            Executive sponsors who understand these challenges in advance are better positioned
+            to resource the program appropriately, set realistic timelines, and maintain
+            organizational support through the inevitable friction of the transition period.
+          </p>
+
+          <h2>Measuring Progress</h2>
+          <p>
+            Zero Trust is a journey, not a destination. Measuring progress requires metrics that
+            reflect both technical implementation milestones and business risk reduction outcomes.
+            Key indicators include the percentage of privileged access sessions covered by MFA,
+            the ratio of micro-segmented workloads, mean time to detect lateral movement, and
+            user satisfaction scores for access management workflows. These metrics tell a story
+            that security teams, executives, and boards can understand together.
+          </p>
+
+        </div>
+
+        <!-- Key takeaways box -->
+        <div class="post-takeaways">
+          <h3>Key Takeaways</h3>
+          <ul>
+            <li>Zero Trust replaces implicit network trust with continuous, explicit verification of every access request</li>
+            <li>Implementation should begin with identity, device health, and least-privilege access before expanding to full micro-segmentation</li>
+            <li>Legacy systems and change management are the most common barriers — plan for both from the start</li>
+            <li>Executive sponsorship and business-driven requirements are prerequisites for sustainable Zero Trust programs</li>
+            <li>Progress metrics should combine technical milestones with business risk reduction outcomes</li>
+          </ul>
+        </div>
+
+        <!-- Post navigation -->
+        <div class="post-nav-row">
+          <a class="btn secondary" href="index.html">← Back to Insights</a>
+          <a class="btn primary" href="compliance-audit-ready-controls.html">Next: Compliance →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related posts -->
+    <section class="related-posts" aria-label="Related articles">
+      <div class="related-posts-inner">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+          <a class="post-card" href="compliance-audit-ready-controls.html">
+            <div class="post-card-image img-compliance"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-compliance">Compliance</span>
+              <h3>Building Audit-Ready Controls That Work Year-Round</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 18, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+          <a class="post-card" href="devops-security-in-pipeline.html">
+            <div class="post-card-image img-devops"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-devops">DevOps</span>
+              <h3>Embedding Security Into the CI/CD Pipeline</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 17, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+          <a class="post-card" href="technology-trends-ai-cybersecurity.html">
+            <div class="post-card-image img-trends"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-trends">Technology Trends</span>
+              <h3>AI in Cybersecurity: Opportunities, Risks, and Executive Readiness</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 14, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Emily Streske. Executive technology leader in cybersecurity, engineering, and business operations.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

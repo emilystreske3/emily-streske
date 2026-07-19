@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Migration Strategy: Balancing Speed and Security Risk | Emily Streske</title>
+  <meta
+    name="description"
+    content="Successful cloud migrations require executive alignment on risk appetite, not just technical checklists. The decisions made early define outcomes for years."
+  />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <meta property="og:title" content="Cloud Migration Strategy: Balancing Speed and Security Risk" />
+  <meta property="og:description" content="How executive leaders can approach cloud migrations with a risk-informed strategy that maintains security without sacrificing delivery speed." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://emilystreske3.github.io/emily-streske/blog/cloud-computing-migration-strategy.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="post-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="../index.html">Emily Streske</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="index.html">Insights</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Post hero -->
+    <section class="post-hero img-cloud" aria-label="Article header">
+      <div class="post-hero-inner">
+        <div class="post-hero-meta">
+          <span class="post-category cat-cloud">Cloud Computing</span>
+          <span class="post-meta-text">July 16, 2026 &middot; 7 min read</span>
+        </div>
+        <h1>Cloud Migration Strategy: Balancing Speed and Security Risk</h1>
+        <p class="post-hero-lead">
+          Successful cloud migrations require executive alignment on risk appetite, not just
+          technical checklists. The decisions made in the planning phase define the security
+          posture, operational model, and compliance readiness of the organization for years
+          to come.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured image banner -->
+    <div class="post-featured-banner" aria-hidden="true">
+      <div class="post-featured-banner-inner img-cloud">
+        <span class="post-banner-label">Cloud Strategy</span>
+      </div>
+    </div>
+
+    <!-- Article body -->
+    <article class="post-article">
+      <div class="post-article-inner">
+        <div class="post-body-content">
+
+          <h2>The Pressure to Move Fast</h2>
+          <p>
+            Cloud migrations are frequently driven by pressure to reduce infrastructure costs,
+            improve scalability, and accelerate development cycles. These are legitimate goals.
+            The problem arises when speed becomes the primary driver and security, data governance,
+            and compliance readiness are treated as problems to be solved after the migration is
+            complete rather than requirements that shape migration strategy from the start.
+          </p>
+          <p>
+            Organizations that move workloads to the cloud without a clear security architecture
+            often discover that they have traded known on-premises risks for unfamiliar cloud
+            risks — misconfigured storage buckets, overprivileged service accounts, unencrypted
+            data in transit, and identity federation gaps that did not exist in the previous
+            environment.
+          </p>
+
+          <h2>Starting with a Risk-Tiered Workload Inventory</h2>
+          <p>
+            Every effective cloud migration begins with understanding what is being moved. A
+            risk-tiered workload inventory classifies systems by data sensitivity, regulatory
+            scope, business criticality, and access requirements. This classification drives
+            migration sequencing — moving lower-risk, less sensitive workloads first to build
+            team confidence and operational patterns before tackling systems that handle
+            regulated data or support critical business functions.
+          </p>
+          <ul>
+            <li><strong>Tier 1 (High risk):</strong> Systems with regulated data (PII, PHI, financial records), customer-facing services with SLA commitments, and identity infrastructure</li>
+            <li><strong>Tier 2 (Moderate risk):</strong> Internal business applications, development environments, and collaboration tools</li>
+            <li><strong>Tier 3 (Lower risk):</strong> Static content delivery, non-sensitive analytics, and archival storage</li>
+          </ul>
+
+          <h2>The Shared Responsibility Model in Practice</h2>
+          <p>
+            One of the most consequential shifts in cloud security is the shared responsibility
+            model. Cloud providers secure the infrastructure — the data centers, hypervisors,
+            and physical hardware. The customer is responsible for securing what runs on top of
+            that infrastructure: data, access management, application configuration, and network
+            controls.
+          </p>
+          <p>
+            Many breaches in cloud environments result not from provider failures but from
+            customer misconfigurations. Executive leaders who understand the shared responsibility
+            boundary can set accurate expectations with their boards, ensure appropriate security
+            investment is allocated to the customer-side responsibilities, and hold teams
+            accountable for configuration hygiene in a way that is grounded in what the
+            organization actually controls.
+          </p>
+
+          <h2>Identity Is the New Perimeter</h2>
+          <p>
+            In cloud environments, identity and access management is the primary security control.
+            The network perimeter that traditionally protected on-premises systems does not exist
+            in the same form in cloud architectures. What replaces it is a strong IAM posture:
+            least-privilege access, multi-factor authentication, just-in-time provisioning, and
+            continuous access review.
+          </p>
+          <p>
+            Organizations that migrate without investing in IAM maturity create significant
+            exposure. Over-permissioned service accounts, shared credentials, and unreviewed
+            access grants accumulate quickly in cloud environments and are frequently exploited
+            in real attacks. Addressing IAM hygiene before migration begins — rather than
+            during or after — is one of the highest-leverage investments a security team can make.
+          </p>
+
+          <h2>Compliance in the Cloud</h2>
+          <p>
+            Regulatory frameworks like SOC 2, HIPAA, and FedRAMP have well-established cloud
+            guidance, and major cloud providers offer compliance documentation, attestation
+            reports, and control mappings that support customer compliance programs. However,
+            using these resources effectively requires internal compliance teams who understand
+            which controls remain the customer's responsibility and how to demonstrate them
+            to auditors.
+          </p>
+          <p>
+            Migration planning should include a compliance impact assessment that identifies
+            which existing controls will change in the cloud environment, which new controls
+            will need to be implemented, and which cloud-native tools can substitute for
+            on-premises controls in a way that satisfies auditor expectations.
+          </p>
+
+        </div>
+
+        <!-- Key takeaways box -->
+        <div class="post-takeaways">
+          <h3>Key Takeaways</h3>
+          <ul>
+            <li>Security architecture decisions made during migration planning define the posture for years — treat them as first-class requirements</li>
+            <li>Risk-tier workloads before migration to sequence moves appropriately and build team capability</li>
+            <li>The shared responsibility model places significant security obligations on the customer — ensure teams understand the boundary</li>
+            <li>IAM is the primary security control in cloud environments; invest in it before migration begins</li>
+            <li>Compliance impact assessments should be part of every cloud migration plan</li>
+          </ul>
+        </div>
+
+        <!-- Post navigation -->
+        <div class="post-nav-row">
+          <a class="btn secondary" href="index.html">← Back to Insights</a>
+          <a class="btn primary" href="leadership-building-resilient-teams.html">Next: Leadership →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related posts -->
+    <section class="related-posts" aria-label="Related articles">
+      <div class="related-posts-inner">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+          <a class="post-card" href="devops-security-in-pipeline.html">
+            <div class="post-card-image img-devops"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-devops">DevOps</span>
+              <h3>Embedding Security Into the CI/CD Pipeline</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 17, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+          <a class="post-card" href="cybersecurity-zero-trust-architecture.html">
+            <div class="post-card-image img-cybersecurity"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-cybersecurity">Cybersecurity</span>
+              <h3>Zero Trust Architecture: A Practical Implementation Guide</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 19, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+          <a class="post-card" href="compliance-audit-ready-controls.html">
+            <div class="post-card-image img-compliance"></div>
+            <div class="post-card-body">
+              <span class="post-category cat-compliance">Compliance</span>
+              <h3>Building Audit-Ready Controls That Work Year-Round</h3>
+              <div class="post-card-footer">
+                <span class="post-date">July 18, 2026</span>
+                <span class="post-read-link">Read →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Emily Streske. Executive technology leader in cybersecurity, engineering, and business operations.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
