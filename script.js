@@ -23,7 +23,7 @@ if (contactForm && formStatus) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
     formStatus.textContent =
-      "Thank you for reaching out. This demo form is ready for backend integration.";
+      "Thank you for your message. Emily will be in touch soon.";
     formStatus.setAttribute("tabindex", "-1");
     contactForm.reset();
     formStatus.focus();
